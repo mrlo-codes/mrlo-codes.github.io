@@ -1,8 +1,37 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>Vote for Daisy, she won't be lazy!</p>
-<p>Vote for Daisy, she won't be test2 </p>
+    <head>
+        <title>Today's Weather</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Today's Weather</h1>
+        <p>I'm hosted with GitHub Pages.</p>
+        <p>Vote for Daisy, she won't be lazy!</p>
+        <p>Enter the city to see the daily weather forecast</p>
+        <div class="input">
+            <input type="text" class="inputValue" placeholder="Enter a city">
+            <input type="submit" value="Submit">
+        </div>
+
+        <div class="display">
+            <h1 class="name"></h1>
+            <p class="desc"></p>
+            <p class="temp">asdf</p>
+        </div>
+        <script src="jquery.csv.js">
+            var csv = require('jquery-csv');
+            var button = document.querySelector('.button');
+            var inputValue = document.querySelector('.inputValue');
+            var cityName = document.querySelector('.cityName');
+            var desc = document.querySelector('.desc');
+            var temp = document.querySelector('.temp');
+            //var info = http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=b1e150d000289baf9d30f53147f908b2;
+            var info = $.get("http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=b1e150d000289baf9d30f53147f908b2");
+            document.getElementById("temp").innerHTML = "hello";
+            //$.csv.toArray(csv, {options}, callback);
+        
+        </script>
+    </body>
+
 </html>
