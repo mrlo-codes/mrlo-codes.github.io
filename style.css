@@ -45,6 +45,17 @@ button{
     transition: 0.2s ease-in-out;
 }
 
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+    
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
 button:hover{
     background: #7c7c7c6b;
 }
@@ -64,4 +75,5 @@ input.search-bar{
 
 h1.temp{
     margin: 0;
+    margin-bottom: 0.4em;
 }
